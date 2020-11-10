@@ -17,7 +17,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const basePath = '/';
   actions.createPage({
     path: basePath,
-    component: require.resolve('.src/templates/events.js')
+    component: require.resolve('./src/templates/events.js')
   });
 ```
 The basePath defaults to the root path, and the createPage method creates a page at the basePath.
